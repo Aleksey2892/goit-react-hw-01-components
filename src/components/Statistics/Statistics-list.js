@@ -1,10 +1,11 @@
 import React from 'react';
 import Statisctics from './Statistics';
+import styles from './styles.module.scss';
 
 const StatisticsList = ({ statistics }) => (
-  <ul className="stat-list">
+  <ul className={styles.statList}>
     {statistics.map(({ id, label, percentage }) => (
-      <li key={id} className="item">
+      <li key={id} className={styles.item}>
         <Statisctics label={label} percentage={percentage} />
       </li>
     ))}

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
-const Profile = ({ data }) => {
-  const { name, tag, location, avatar, stats } = data;
+const Profile = ({ user }) => {
+  const { name, tag, location, avatar, stats } = user;
   const { followers, views, likes } = stats;
 
   return (
@@ -33,20 +33,14 @@ const Profile = ({ data }) => {
   );
 };
 
-// Profile.defaultProps = {
-//   avatar: 'https://image.flaticon.com/icons/png/128/149/149071.png',
-// };
-
 Profile.propTypes = {
-  user: PropTypes.objectOf(
-    PropTypes.exact({
-      name: PropTypes.string.isRequired,
-      tag: PropTypes.string.isRequired,
-      location: PropTypes.string.isRequired,
-      avatar: PropTypes.string.isRequired,
-      stats: PropTypes.objectOf(PropTypes.number.isRequired),
-    }).isRequired,
-  ),
+  user: PropTypes.exact({
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number.isRequired),
+  }).isRequired,
 };
 
 export default Profile;
