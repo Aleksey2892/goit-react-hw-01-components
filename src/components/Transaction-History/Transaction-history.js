@@ -13,7 +13,7 @@ const TransactionHistory = ({ transactions }) => (
     </thead>
 
     {transactions.map(({ id, type, amount, currency }) => (
-      <tbody key={id}>
+      <tbody className={styles.lineTable} key={id}>
         <tr>
           <td className={styles.item}>{type}</td>
           <td className={styles.item}>{amount}</td>
@@ -31,7 +31,7 @@ TransactionHistory.propTypes = {
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
-    }),
+    }).isRequired,
   ).isRequired,
 };
 

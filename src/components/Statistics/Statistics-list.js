@@ -1,5 +1,4 @@
 import React from 'react';
-// import Statisctics from './Statistics';
 import styles from './Styles.module.scss';
 import switchColor from './switchColor';
 

@@ -15,3 +15,7 @@
 .item {
   text-align: center;
 }
+
+.lineTable:nth-child(2n) {
+  background-color: rgb(182, 196, 195);
+}
