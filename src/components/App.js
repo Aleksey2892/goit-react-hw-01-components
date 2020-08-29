@@ -4,7 +4,7 @@ import Profile from './Profile/Profile';
 import user from './Data/user.json';
 //=======================================================
 //! Statistics
-import StatisticsSection from './Statistics/Statistics-section';
+import Statistics from './Statistics/Statistics';
 import statistics from './Data/statistical-data.json';
 //=======================================================
 //! FriendList
@@ -20,7 +20,7 @@ const App = () => (
   <>
     <Profile user={user} />
 
-    <StatisticsSection title={'Upload stats'} statistics={statistics} />
+    <Statistics title={'Upload stats'} statistics={statistics} />
 
     <FriendList friends={friends} />
 

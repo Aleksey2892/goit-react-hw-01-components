@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles.module.scss';
+import styles from './Styles.module.scss';
 
 const Profile = ({ user }) => {
   const { name, tag, location, avatar, stats } = user;
@@ -16,15 +16,15 @@ const Profile = ({ user }) => {
       </div>
 
       <ul className={styles.stats}>
-        <li>
+        <li className={styles.listItem}>
           <span className="label">Followers</span>
           <span className={styles.quantity}>{followers}</span>
         </li>
-        <li>
+        <li className={styles.listItem}>
           <span className="label">Views</span>
           <span className={styles.quantity}>{views}</span>
         </li>
-        <li>
+        <li className={styles.listItem}>
           <span className="label">Likes</span>
           <span className={styles.quantity}>{likes}</span>
         </li>
