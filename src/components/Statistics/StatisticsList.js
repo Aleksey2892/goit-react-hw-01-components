@@ -2,7 +2,7 @@ import React from 'react';
 
 import switchColor from './switchColor';
 
-import s from './s.module.scss';
+import s from './Styles.module.scss';
 
 const StatisticsList = ({ statistics }) => (
   <ul className={s.statList}>

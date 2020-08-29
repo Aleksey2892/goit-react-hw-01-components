@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StatisticsList from './StatisticsList';
-import s from './s.module.scss';
+import s from './Styles.module.scss';
 
 const Statistics = ({ title, statistics }) => {
   const isRenderTitle = title;

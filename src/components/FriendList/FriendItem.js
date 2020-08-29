@@ -1,6 +1,6 @@
 import React from 'react';
 
-import s from './s.module.scss';
+import s from './Styles.module.scss';
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   const statusOnlineClass = isOnline ? s.statusOnline : s.statusOffline;
