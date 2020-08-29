@@ -1,20 +1,14 @@
-//! Profile
 import React from 'react';
+
 import Profile from './Profile/Profile';
-import user from './Data/user.json';
-//=======================================================
-//! Statistics
 import Statistics from './Statistics/Statistics';
-import statistics from './Data/statistical-data.json';
-//=======================================================
-//! FriendList
-import FriendList from './Friend-List/Friend-list';
-import friends from './Data/friends.json';
-//=======================================================
-//! TransactionHistory
-import TransactionHistory from './Transaction-History/Transaction-history';
-import transactions from './Data/transactions.json';
-//=======================================================
+import FriendList from './FriendList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+
+import user from '../data/user.json';
+import statistics from '../data/statistical-data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 const App = () => (
   <>

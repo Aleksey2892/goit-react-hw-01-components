@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Styles.module.scss';
+
+import s from './s.module.scss';
 
 const TransactionHistory = ({ transactions }) => (
-  <table className={styles.transactionHistory}>
-    <thead className={styles.trTitle}>
+  <table className={s.transactionHistory}>
+    <thead className={s.trTitle}>
       <tr>
         <th>Type</th>
         <th>Amount</th>
@@ -13,11 +14,11 @@ const TransactionHistory = ({ transactions }) => (
     </thead>
 
     {transactions.map(({ id, type, amount, currency }) => (
-      <tbody className={styles.lineTable} key={id}>
+      <tbody className={s.lineTable} key={id}>
         <tr>
-          <td className={styles.item}>{type}</td>
-          <td className={styles.item}>{amount}</td>
-          <td className={styles.item}>{currency}</td>
+          <td className={s.item}>{type}</td>
+          <td className={s.item}>{amount}</td>
+          <td className={s.item}>{currency}</td>
         </tr>
       </tbody>
     ))}

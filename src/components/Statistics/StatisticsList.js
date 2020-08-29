@@ -1,13 +1,15 @@
 import React from 'react';
-import styles from './Styles.module.scss';
+
 import switchColor from './switchColor';
 
+import s from './s.module.scss';
+
 const StatisticsList = ({ statistics }) => (
-  <ul className={styles.statList}>
+  <ul className={s.statList}>
     {statistics.map(({ id, label, percentage }) => (
       <li key={id} className={switchColor(label)}>
-        <span className={styles.label}>{label}</span>
-        <span className={styles.percentage}>{percentage}%</span>
+        <span className={s.label}>{label}</span>
+        <span className={s.percentage}>{percentage}%</span>
       </li>
     ))}
   </ul>

@@ -1,15 +1,20 @@
 import React from 'react';
-import StatisticsList from './Statistics-list';
 import PropTypes from 'prop-types';
-import styles from './Styles.module.scss';
 
-const Statistics = ({ title, statistics }) => (
-  <section className={styles.statistics}>
-    {title && <h2 className={styles.titleStat}>{title}</h2>}
+import StatisticsList from './StatisticsList';
+import s from './s.module.scss';
 
-    <StatisticsList statistics={statistics} />
-  </section>
-);
+const Statistics = ({ title, statistics }) => {
+  const isRenderTitle = title;
+
+  return (
+    <section className={s.statistics}>
+      {isRenderTitle && <h2 className={s.titleStat}>{title}</h2>}
+
+      <StatisticsList statistics={statistics} />
+    </section>
+  );
+};
 
 Statistics.defaultProps = {
   title: '',
