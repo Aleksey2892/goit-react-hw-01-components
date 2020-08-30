@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import s from './Styles.module.scss';
 
-const Profile = ({ user }) => {
-  const { name, tag, location, avatar, stats } = user;
+const Profile = ({ name, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
 
   return (

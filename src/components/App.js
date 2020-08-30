@@ -12,7 +12,7 @@ import transactions from '../data/transactions.json';
 
 const App = () => (
   <>
-    <Profile user={user} />
+    <Profile {...user} />
 
     <Statistics title={'Upload stats'} statistics={statistics} />
 
